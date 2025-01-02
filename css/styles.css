@@ -306,7 +306,7 @@ img {
 }
 
 .advantages {
-  padding: 96px 0;
+  padding: 24px 0;
 }
 
 .advantages-title {
@@ -413,7 +413,7 @@ img {
 }
 
 .our-team-name {
-  padding: 32px 0;
+  padding: 32px 16px;
 }
 
 .our-team-title-list {
@@ -462,22 +462,26 @@ img {
   .our-team-list {
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 24px;
+    gap: 64px 24px;
   }
   .our-team-image {
-    width: calc((100% - 24px) / 2);
+    width: calc(100% / 2);
   }
 }
 
 @media screen and (min-width: 1158px) {
   .our-team .container {
-    max-width: 1128px;
+    max-width: 1158px;
   }
   .our-team-list {
     flex-wrap: nowrap;
   }
   .our-team-image {
     width: calc((100% - 72px) / 4);
+  }
+
+  .our-team-image img {
+    max-width: 100%;
   }
 }
 
