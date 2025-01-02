@@ -999,6 +999,11 @@ img {
   background-color: #ffffff;
 }
 
+.mobil-menu .modal-button:hover,
+.mobil-menu .modal-button:focus {
+  background-color: #404bbf;
+}
+
 .mobil-menu-adress-list {
   display: flex;
   flex-direction: column-reverse;
@@ -1021,6 +1026,12 @@ img {
 
 .mobil-menu-icons {
   justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .mobil-menu {
+    display: none;
+  }
 }
 
 /*==========Візуальне приховування=========*/
