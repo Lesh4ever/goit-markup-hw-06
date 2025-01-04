@@ -31,6 +31,7 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .container {
@@ -229,7 +230,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/mobil/people-office-mobil.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   padding: 72px 0;
@@ -244,7 +245,7 @@ img {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office@2x.jpg);
+      url(../images/mobil/people-office-mobil@2x.jpg);
   }
 }
 
@@ -288,12 +289,44 @@ img {
 
   .main {
     padding: 122px 0;
+    background-color: #2e2f42;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/tablet/people-office-teblet.jpg);
+  }
+
+  @media (min-resolution: 192dpi) {
+    .main {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/tablet/people-office-teblet@2x.jpg);
+    }
   }
 }
 
 @media screen and (min-width: 1158px) {
   .main {
     padding: 188px 0;
+    background-color: #2e2f42;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+  }
+
+  @media (min-resolution: 192dpi) {
+    .main {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office@2x.jpg);
+    }
   }
 }
 
@@ -978,6 +1011,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: #ffffff;
+  display: none;
 }
 
 .mobil-menu-list {
