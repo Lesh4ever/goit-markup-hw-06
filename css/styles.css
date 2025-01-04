@@ -288,7 +288,7 @@ img {
   }
 
   .main {
-    padding: 122px 0;
+    padding: 112px 0;
     background-color: #2e2f42;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -349,7 +349,11 @@ img {
 }
 
 .advantages {
-  padding: 24px 0;
+  padding: 96px 0;
+}
+
+.advantages-list-item:last-child {
+  margin-bottom: 0;
 }
 
 .advantages-title {
@@ -386,12 +390,15 @@ img {
   .advantages-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    column-gap: 20px;
+    row-gap: 72px;
+
     justify-content: space-between;
     flex-direction: row;
   }
 
   .advantages-list-item {
+    margin-bottom: 0;
     max-width: 356px;
     width: calc((100% - 24px) / 2);
   }
@@ -423,7 +430,7 @@ img {
 /*===========Секція Our Time==========*/
 .our-team {
   background-color: #f4f4fd;
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .our-team-title {
@@ -629,6 +636,10 @@ img {
   padding: 100px 0;
 }
 
+.footer-content {
+  margin-bottom: 72px;
+}
+
 .footer-content .logo {
   display: block;
   margin: 0;
@@ -647,7 +658,6 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
-  margin-bottom: 72px;
 }
 
 .footer-social {
@@ -804,6 +814,15 @@ img {
     margin-right: 120px;
     padding-right: 0px;
     margin-left: 0px;
+  }
+
+  .footer-text,
+  .footer-social {
+    margin-bottom: 0;
+  }
+
+  .footer-form {
+    margin-left: 80px;
   }
 }
 
@@ -985,6 +1004,8 @@ img {
   display: block;
   min-width: 169px;
   height: 56px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
